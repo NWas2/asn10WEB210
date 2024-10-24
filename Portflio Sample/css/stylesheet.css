@@ -1,0 +1,119 @@
+/*Najya Washington Web 210*/
+
+/* Color Palette
+#F191AC
+#F6A6BB
+#F4BBC9
+#FAE6E7
+#F7EEED
+#ed2e64
+*/
+
+html {
+    background-color: #F7EEED;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    line-height: 1.4;
+    color: black;
+}
+
+.navbar ul {
+    list-style: none;
+    background-color: #F191AC;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar ul li {
+    display: inline-block;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: black;
+    padding: 8px 50px;
+    display: block;
+}
+
+.navbar ul li :hover, .navbar ul li :hover a {
+    background-color: #ed2e64;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    background-color: #F191AC;
+}
+
+.navbar ul li:hover .dropdown {
+    display: block;
+}
+
+.navbar ul li .dropdown li {
+    display: block;
+}
+
+h1 {
+    font-size: 7.5rem; 
+    line-height: 0.90; 
+}
+
+h2 {
+    font-size: 2.4rem;
+}
+
+/*Grid on index page section*/
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: #F6A6BB;
+    padding: 10px;
+}
+
+.grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.project-wrapper img {
+    float: left;
+    margin-right: 25px;
+    width: 30%;
+    padding-bottom: 15px;
+}
+
+@media screen and (min-width:860px) {
+    .project-wrapper {
+        display: flow-root;
+    }
+    .project-wrapper img {
+        float: left;
+        margin-right: 25px; /*New Sizing*/
+    }
+}
+
+footer {
+    background: #F191AC;
+    color: black;
+}
+
+@media screen and (min-width: 860px){
+    footer {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 20px;
+    }
+}
+
+@media screen and (max-width: 859px){
+    footer {
+        text-align: center;
+        padding: 10px;
+    }
+
+}
